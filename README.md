@@ -4,34 +4,8 @@
     <meta name="google-site-verification" content="jJ8jnpL2tyogzpUo3BT0FW83PjFqMz2kPpePh-K13No" />
 </head>
 <body>
-    <div class="container">
-        <h1 class="center">Salon Booking System by Tony Li</h1>
-        <div class="borderTop">
-            <div class="span-6 colborder info prepend-1">
-             <p class="prepend-top">
-                <a href="https://salon.hnaxes.com" target="_blank">Frontend Demo</a><br>
-                <a href="https://salon.hnaxes.com/admin" target="_blank">Admin Panel Demo</a><br>
-                Username : administrator<br>
-                Password : administrator
-             </p>
-             <img src="https://raw.githubusercontent.com/Topstar88/Salon-Booking/main/images/img1.png" height="280" width="600" >
-             <img src="https://raw.githubusercontent.com/Topstar88/Salon-Booking/main/images/img2.png" height="280" width="600" >
-             <img src="https://raw.githubusercontent.com/Topstar88/Salon-Booking/main/images/img3.png" height="280" width="600" >
-             <img src="https://raw.githubusercontent.com/Topstar88/Salon-Booking/main/images/img4.png" height="280" width="600" >
-             <img src="https://raw.githubusercontent.com/Topstar88/Salon-Booking/main/images/img5.png" height="280" width="600" >
-             <img src="https://raw.githubusercontent.com/Topstar88/Salon-Booking/main/images/img6.png" height="280" width="600" >
-         </div>
-    </div>
-    <hr>
-    <h2 id="toc" class="alt">Table of Contents</h2>
-    <ol class="alpha">
-        <li><a href="#info">Product Information</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#SystemRequirements">System Requirements</a></li>
-        <li><a href="#installation">Installation Guide</a></li>
-    </ol>
-    <hr>
-    <h3 id="info"><strong>Product Information</strong> - <a href="#toc">top</a></h3>
+    
+
   <div>
     <p>Salon Booking Management System Script is a PHP Script for clients can book their appointments easily. You can book Appointments with your favourite Agent. Cash By hand & Stripe Payment Method Added. User can check stripe invoice and pay instantly. Anyone can use this to manage online bookings. You can create their account using E-Mail or Social Login with Google & Facebook and Track your bookings. You can easily change website settings, Add/Edit/Delete Blog Posts, Disqus & Facebook Comments settings, SMTP settings, social login keys settings, page settings, header/footer scripts settings, analytics settings, meta tags settings, e-mail settings, google recaptcha settings, Banner ads settings, services, bookings and manage all of the gallery images using our powerful Admin Panel. The script also includes Modular Theme Support which lets you create / edit themes very easily. The interface is completely responsive and modern, built with technologies like Bootstrap 4 &amp; jQuery.</p>
     <h3 id="features"><strong>Features</strong> - <a href="#toc">top</a></h3>
