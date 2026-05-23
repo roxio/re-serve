@@ -1,71 +1,105 @@
-###################
-What is CodeIgniter
-###################
+# Salon Booking Management System Script
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Salon Booking Management System Script is a PHP application that allows clients to book appointments easily with their preferred agent.
 
-*******************
-Release Information
-*******************
+Supports:
+- Cash payments
+- Stripe payments (including invoice viewing and instant payment)
+- User accounts via Email or Social Login (Google & Facebook)
+- Booking tracking and management
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+Includes a powerful admin panel for managing:
+- Website settings
+- Blog posts
+- Disqus & Facebook comments
+- SMTP configuration
+- Social login keys
+- Page settings
+- Header/footer scripts
+- Analytics
+- Meta tags
+- Email settings
+- Google reCAPTCHA
+- Banner ads
+- Services
+- Bookings
+- Gallery images
 
-**************************
-Changelog and New Features
-**************************
+The script also includes **Modular Theme Support**, allowing easy theme creation and editing.
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+Built with modern technologies including **Bootstrap 4** and **jQuery**, and fully responsive.
 
-*******************
-Server Requirements
-*******************
+---
 
-PHP version 5.6 or newer is recommended.
+## Features
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+- Agent Selection with Booking
+- Pay with Stripe / Credit Card
+- Client Accounts
+- Social Login (Google & Facebook)
+- Manage Bookings
+- Gallery Images
+- Top & Bottom Ads Support
+- Google reCAPTCHA
+- SMTP Support
+- Blog Support
+- Built-in Contact Form
+- Powerful Admin Panel
+- 100% Responsive Design
+- AJAX Support
+- SEO Ready
+- 100% Pen-tested Security
+- Quick and Easy Installation
+- Free Lifetime Updates
+- Easy to Use
+- Modular Theme Support
+- And more…
 
-************
-Installation
-************
+---
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+## System Requirements
 
-*******
-License
-*******
+- **Operating System:** Linux or Windows
+- **Hosting:** Shared, VPS, or Dedicated Server
+- **Web Server:** Apache
+- **PHP Version:** 5.6+
+- PHP CURL Extension
+- PHP ZIP Extension
+- **MySQL:** 5.1+
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+---
 
-*********
-Resources
-*********
+## Installation Guide
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+### Fast & Easy Installation
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+1. Create a backup of your database and files.
+2. Upload contents of `salon.zip` into your domain's `public_html` directory.
+3. Navigate to:
 
-***************
-Acknowledgement
-***************
+   ```text
+   yoursite.com/install
+   ```
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+4. Follow the installation wizard.
+5. Access the admin panel at:
+
+   ```text
+   yoursite.com/admin
+   ```
+
+---
+
+## Tech Stack
+
+- PHP
+- Bootstrap 4
+- jQuery
+- MySQL
+- Stripe API
+
+---
+
+## License
+
+Please refer to your project license for usage details.
