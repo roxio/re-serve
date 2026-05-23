@@ -8,6 +8,8 @@ class StripeModel extends CI_Model {
                     ->get('stripe-settings')
                     ->row_array();
         
+        $res = is_array($res) ? array_merge($this->defaultStripe(), $res) : $this->defaultStripe();
+
         if($res['stripe_api_key'] != '' && $res['stripe_publishable_key'] != '' && $res['stripe_currency'] != ''){
             $res['stripe_status'] = true;
         }
@@ -23,5 +25,14 @@ class StripeModel extends CI_Model {
              ->set($fields)
              ->where('id', 1)
              ->update('stripe-settings');
+    }
+
+    private function defaultStripe() {
+        return array(
+            'stripe_api_key' => '',
+            'stripe_publishable_key' => '',
+            'stripe_currency' => '',
+            'status' => 0
+        );
     }
 }

@@ -19,6 +19,7 @@
 		
 		<link rel="icon" href="<?php uploads('img/' . $general['favicon']) ?>">
 		<title><?php echo (isset($title) ? esc($title) . ' - ' : '') . esc($general['title']) ?></title>
+		<?php $stripe = isset($stripe) && is_array($stripe) ? array_merge(array('stripe_publishable_key' => '', 'status' => 0), $stripe) : array('stripe_publishable_key' => '', 'status' => 0); ?>
 		<script type="text/javascript">"use strict";
 			const base 			= '<?php echo esc(base_url()) ?>';
 			const homepage 		= '<?php echo esc(HOMEPAGE_CONTROLLER); ?>';
@@ -30,6 +31,7 @@
 		<link rel="stylesheet" href="<?php $assets("css/icomoon.css"); ?>">
 		<link rel="stylesheet" href="<?php $assets("plugins/calendar/css/vanilla-calendar-min.css"); ?>">
 		<link rel="stylesheet" href="<?php $assets("css/style.css"); ?>">
+		<link rel="stylesheet" href="<?php $assets("css/custom.css"); ?>">
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet"> 
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<?php

@@ -27,6 +27,9 @@
 							</div>
 						</div>
 					</div>
+					<a href="<?php echo base_url($this->session->userdata('admin_id') ? GENERAL_CONTROLLER . '/dashboard' : AUTH_CONTROLLER . '/login'); ?>" class="adminIconLink" title="Panel administratora" aria-label="Panel administratora">
+						<span class="icon-dashboard" aria-hidden="true"></span>
+					</a>
 					<?php if($this->session->userdata('id')){ ?>
 						<div class="btn-group">
 							<button type="button" class="btn loginBtn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</button>

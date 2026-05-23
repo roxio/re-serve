@@ -1,0 +1,25 @@
+.headerMain .headerMainInner .adminIconLink {
+	margin-left: 24px;
+	width: 42px;
+	height: 42px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: #343a40;
+	background: rgba(255, 255, 255, 0.92);
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+.headerMain .headerMainInner .adminIconLink:hover {
+	color: #000;
+	background: #ffe100;
+}
+
+@media only screen and (max-width: 639px) {
+	.headerMain .headerMainInner .adminIconLink {
+		margin-left: 16px;
+		width: 40px;
+		height: 40px;
+	}
+}

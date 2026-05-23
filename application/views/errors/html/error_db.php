@@ -57,8 +57,8 @@ p {
 </head>
 <body>
 	<div id="container">
-		<h1><?php echo esc($heading, true); ?></h1>
-		<?php echo esc($message, true); ?>
+		<h1><?php echo html_escape($heading, true); ?></h1>
+		<?php echo html_escape($message, true); ?>
 	</div>
 </body>
 </html>

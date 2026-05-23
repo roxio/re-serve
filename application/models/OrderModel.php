@@ -30,10 +30,19 @@
 		}
         public function getStripe() {
             $res = $this->db->limit(1)->where('id', 1)->get('stripe-settings')->row_array();
-            return $res;
+            return is_array($res) ? array_merge($this->defaultStripe(), $res) : $this->defaultStripe();
         }
         public function setStripe($fields) {
             $this->db->set($fields)->where('id', 1)->update('stripe-settings');
+        }
+
+        private function defaultStripe() {
+            return array(
+                'stripe_api_key' => '',
+                'stripe_publishable_key' => '',
+                'stripe_currency' => '',
+                'status' => 0
+            );
         }
     }  
 ?>

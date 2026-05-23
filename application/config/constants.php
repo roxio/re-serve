@@ -86,7 +86,7 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 /*
 |--------------------------------------------------------------------------
-| HTTP_VERB
+| HTTP verbs
 |--------------------------------------------------------------------------
 */
 defined('HTTP_VERB_GET')    OR define('HTTP_VERB_GET',    'GET');
@@ -95,15 +95,8 @@ defined('HTTP_VERB_PUT')    OR define('HTTP_VERB_PUT',    'PUT');
 defined('HTTP_VERB_DELETE') OR define('HTTP_VERB_DELETE', 'DELETE');
 defined('HTTP_VERB_PATCH')  OR define('HTTP_VERB_PATCH',  'PATCH');
 
-/*
-|--------------------------------------------------------------------------
-| API回傳代碼 0=成功、1=失敗
-|--------------------------------------------------------------------------
-*/
 defined('RESULT_OK')   OR define('RESULT_OK',   1);
 defined('RESULT_FAIL') OR define('RESULT_FAIL', 0);
-
-/* CUSTOM CONSTANTS */
 
 define('GENERAL_CONTROLLER',        'general');
 define('AUTH_CONTROLLER',           'auth');
@@ -127,14 +120,14 @@ define('AGENTS_CONTROLLER',         'agents');
 define('DEMO_MODE',                 false);
 
 define('INSTALL_CONTROLLER',    'install');
-define('ADMIN_CONTROLLER',    	'admin');
+define('ADMIN_CONTROLLER',      'admin');
 define('ROUTE_404',             '404');
 
-define('PRODUCT_ID',            "28185575");
-define('VENDOR_URL',            "https://salon.hnaxes.com");
-define('DOWNLOADS_URL',         "https://salon.hnaxes.com/");
-define('VENDOR_SUPPORT_URL',    "mailto:desclix1@gmail.com");
-define('VENDOR_NAME',           "Desclix");
-define('PRODUCT_NAME',          "Salon - Booking System");
+define('PRODUCT_ID',            '28185575');
+define('VENDOR_URL',            'https://salon.hnaxes.com');
+define('DOWNLOADS_URL',         'https://salon.hnaxes.com/');
+define('VENDOR_SUPPORT_URL',    'mailto:desclix1@gmail.com');
+define('VENDOR_NAME',           'Desclix');
+define('PRODUCT_NAME',          'Salon - Booking System');
 define('PRODUCT_VERSION',       1.3);
 define('ENVATO_URL',            'https://codecanyon.net/item/salon-booking-management-system/28185575');

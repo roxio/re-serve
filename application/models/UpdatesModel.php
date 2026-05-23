@@ -35,6 +35,12 @@ class UpdatesModel extends CI_Model {
             $this->cache->save($this->cache_var, $info);
         }
 
+        if(!is_array($info) || !isset($info['version'])) {
+            $return['status'] = 'unavailable';
+            $return['uploaded'] = $this->is_uploaded();
+            return $return;
+        }
+
         if($info['version'] == PRODUCT_VERSION) {
             $return['status'] = 'latest';
         }

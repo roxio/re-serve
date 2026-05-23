@@ -194,7 +194,7 @@ INSERT INTO `logintbl` (`id`, `fullName`, `email`, `password`, `verifiedEmail`, 
 (104, 'client1', 'client1@mail.com', '$2y$10$BUz2rDlMpqNRgnSFESJqMOBDNHL2b2k64bRza1s2TUBw7jIh6lbyq', 0, '', '', 0, '+923335754716', '', 0, 0, '60d99e7142530a930e74272e27069ecc', 0, 0, 0, '2020-07-29 15:35:24'),
 (105, 'client2', 'client2@mail.com', '$2y$10$BkGbW/vgUUH27AF6NQelEODBW8rNdzMCLDasy9FYaaW1mRz7fkpk.', 0, '', '', 0, '+926548765320', '', 0, 0, '9c8ef6ff34ddb86f06231664558ea160', 0, 0, 0, '2020-07-29 15:36:41'),
 (106, 'client3', 'client3@mail.com', '$2y$10$YnCp9ib20/kepaIiCNDpj.fuWqo9uYLfsuMNXb.lch3O3v6oHFgam', 0, '', '', 0, '00576654192048', '', 0, 0, '28dbf93f5d65e041000d1e47126419bf', 0, 0, 0, '2020-07-29 15:37:34'),
-(140, 'admin1', 'admin@gmail.com', '$2y$10$HzBQtLU2cn1J7COxXHkHee7cOHLh32z4iVOLz018jPqGWrlJc.H72', 0, '', '', 1, '', '', 0, 0, '', 0, 0, 0, '2020-08-03 06:07:48');
+(140, 'admin1', 'admin@gmail.com', '$2y$10$6Brfp5v27y82ypKN9b6xVO9rjHONWMliDFFSpO3Na4MHbssKwQyxK', 0, '', '', 1, '', '', 0, 0, '', 0, 0, 0, '2020-08-03 06:07:48');
 
 DROP TABLE IF EXISTS `meta-tags-settings`;
 CREATE TABLE `meta-tags-settings` (

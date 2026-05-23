@@ -6,7 +6,13 @@ class AdminModel extends CI_Model {
         $identifier = trim(strtolower($identifier));
         $password = trim($password);
 
-        $res = $this->db->limit(1)->where("`fullName` = '$identifier' OR `email` = '$identifier'")->get('logintbl');
+        $res = $this->db
+            ->limit(1)
+            ->group_start()
+            ->where('fullName', $identifier)
+            ->or_where('email', $identifier)
+            ->group_end()
+            ->get('logintbl');
 
         if($res->num_rows()) {
             $user = $res->row_array();
