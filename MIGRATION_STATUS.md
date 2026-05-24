@@ -21,7 +21,7 @@ Sprawdzone:
 - Uruchomienie CLI renderuje stronę główną z danymi z bazy `salon`.
 - Katalog instalacyjny SQL jest przeniesiony: `application/views/install/includes/sql/latest.sql`.
 - Lokalna baza została ustawiona na `localhost`, użytkownik `root`, puste hasło, baza `salon`.
-- Lokalny `base_url` został ustawiony na `http://127.0.0.1/NEWCODEINTEGER/`.
+- Lokalny `base_url` został ustawiony na `http://127.0.0.1/`.
 - Strona główna, logowanie i blog odpowiadają statusem `200` na lokalnym serwerze testowym.
 - Panel admina i sekcja usług zwracają `307`, czyli aplikacja poprawnie kieruje je przez mechanizm logowania/uprawnień.
 - Poprawiono brakujące domyślne dane Stripe w widokach publicznych.
@@ -40,3 +40,12 @@ Sprawdzone:
 - Przejść formularze mutujące dane: dodanie/edycja usługi, rezerwacja testowa, zmiana ustawień, upload grafiki.
 - Sprawdzić przepływ użytkownika końcowego: rejestracja/logowanie klienta, wybór usługi, data/godzina, zapis rezerwacji.
 - Naprawić błędy runtime wynikające z PHP 8.2, nowszego CI i realnych danych.
+
+## Kontrola po aktualizacji folderu
+
+- Folder `NEWCODEINTEGER` nie istnieje już jako osobny katalog; aktywny projekt znajduje się w katalogu głównym repozytorium.
+- Root projektu ma CodeIgniter 3.1.13.
+- `base_url` został dostosowany do root: `http://127.0.0.1/`.
+- Konfiguracja bazy nadal wskazuje na `localhost`, `root`, puste hasło i bazę `salon`.
+- Pełny lint PHP dla projektu przechodzi bez błędów.
+- Runtime jest obecnie zablokowany, ponieważ MySQL/MariaDB nie działa na `localhost`; aplikacja zwraca błąd połączenia z bazą.
