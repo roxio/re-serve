@@ -1,0 +1,104 @@
+ERROR - 2026-05-25 05:52:46 --> Error connecting to the database: mysqli_sql_exception: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia in E:\GITHUB\re-serve\codeigniter4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\GITHUB\re-serve\codeigniter4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'salon', 3306, '', 0)
+#1 E:\GITHUB\re-serve\codeigniter4\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\GITHUB\re-serve\codeigniter4\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\GITHUB\re-serve\codeigniter4\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\GITHUB\re-serve\codeigniter4\app\Models\MainModel.php(177): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\GITHUB\re-serve\codeigniter4\app\Models\MainModel.php(31): App\Models\MainModel->firstRow('general-setting...')
+#6 E:\GITHUB\re-serve\codeigniter4\app\Models\MainModel.php(140): App\Models\MainModel->general_settings()
+#7 E:\GITHUB\re-serve\codeigniter4\app\Controllers\Homepage.php(19): App\Models\MainModel->pageData()
+#8 E:\GITHUB\re-serve\codeigniter4\system\CodeIgniter.php(974): App\Controllers\Homepage->index()
+#9 E:\GITHUB\re-serve\codeigniter4\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+#10 E:\GITHUB\re-serve\codeigniter4\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\GITHUB\re-serve\codeigniter4\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 E:\GITHUB\re-serve\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 E:\GITHUB\re-serve\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia in E:\GITHUB\re-serve\codeigniter4\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 E:\GITHUB\re-serve\codeigniter4\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\GITHUB\re-serve\codeigniter4\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\GITHUB\re-serve\codeigniter4\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\GITHUB\re-serve\codeigniter4\app\Models\MainModel.php(177): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\GITHUB\re-serve\codeigniter4\app\Models\MainModel.php(31): App\Models\MainModel->firstRow('general-setting...')
+#5 E:\GITHUB\re-serve\codeigniter4\app\Models\MainModel.php(140): App\Models\MainModel->general_settings()
+#6 E:\GITHUB\re-serve\codeigniter4\app\Controllers\Homepage.php(19): App\Models\MainModel->pageData()
+#7 E:\GITHUB\re-serve\codeigniter4\system\CodeIgniter.php(974): App\Controllers\Homepage->index()
+#8 E:\GITHUB\re-serve\codeigniter4\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+#9 E:\GITHUB\re-serve\codeigniter4\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\GITHUB\re-serve\codeigniter4\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 E:\GITHUB\re-serve\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 E:\GITHUB\re-serve\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-05-25 05:52:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `general-settings`
+ LIMIT 1', [], false)
+ 3 APPPATH\Models\MainModel.php(177): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\MainModel.php(31): App\Models\MainModel->firstRow('general-settings')
+ 5 APPPATH\Models\MainModel.php(140): App\Models\MainModel->general_settings()
+ 6 APPPATH\Controllers\Homepage.php(19): App\Models\MainModel->pageData()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Homepage->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-05-25 05:52:55 --> Error connecting to the database: mysqli_sql_exception: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia in E:\GITHUB\re-serve\codeigniter4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 E:\GITHUB\re-serve\codeigniter4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'salon', 3306, '', 0)
+#1 E:\GITHUB\re-serve\codeigniter4\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\GITHUB\re-serve\codeigniter4\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\GITHUB\re-serve\codeigniter4\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\GITHUB\re-serve\codeigniter4\app\Models\MainModel.php(177): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\GITHUB\re-serve\codeigniter4\app\Models\MainModel.php(31): App\Models\MainModel->firstRow('general-setting...')
+#6 E:\GITHUB\re-serve\codeigniter4\app\Models\MainModel.php(140): App\Models\MainModel->general_settings()
+#7 E:\GITHUB\re-serve\codeigniter4\app\Controllers\Homepage.php(19): App\Models\MainModel->pageData()
+#8 E:\GITHUB\re-serve\codeigniter4\system\CodeIgniter.php(974): App\Controllers\Homepage->index()
+#9 E:\GITHUB\re-serve\codeigniter4\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+#10 E:\GITHUB\re-serve\codeigniter4\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\GITHUB\re-serve\codeigniter4\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 E:\GITHUB\re-serve\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 E:\GITHUB\re-serve\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia in E:\GITHUB\re-serve\codeigniter4\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 E:\GITHUB\re-serve\codeigniter4\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\GITHUB\re-serve\codeigniter4\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\GITHUB\re-serve\codeigniter4\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\GITHUB\re-serve\codeigniter4\app\Models\MainModel.php(177): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\GITHUB\re-serve\codeigniter4\app\Models\MainModel.php(31): App\Models\MainModel->firstRow('general-setting...')
+#5 E:\GITHUB\re-serve\codeigniter4\app\Models\MainModel.php(140): App\Models\MainModel->general_settings()
+#6 E:\GITHUB\re-serve\codeigniter4\app\Controllers\Homepage.php(19): App\Models\MainModel->pageData()
+#7 E:\GITHUB\re-serve\codeigniter4\system\CodeIgniter.php(974): App\Controllers\Homepage->index()
+#8 E:\GITHUB\re-serve\codeigniter4\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+#9 E:\GITHUB\re-serve\codeigniter4\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\GITHUB\re-serve\codeigniter4\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 E:\GITHUB\re-serve\codeigniter4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 E:\GITHUB\re-serve\codeigniter4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-05-25 05:52:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `general-settings`
+ LIMIT 1', [], false)
+ 3 APPPATH\Models\MainModel.php(177): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\MainModel.php(31): App\Models\MainModel->firstRow('general-settings')
+ 5 APPPATH\Models\MainModel.php(140): App\Models\MainModel->general_settings()
+ 6 APPPATH\Controllers\Homepage.php(19): App\Models\MainModel->pageData()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Homepage->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Homepage))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
